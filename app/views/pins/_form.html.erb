@@ -10,16 +10,18 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= form.label :photo %>
-    <%= form.text_field :photo, id: :pin_photo %>
-  </div>
-
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_field :description, id: :pin_description %>
-  </div>
+<div class="form-group">
+    <div class="field">
+      <%= form.label :photo %>
+      <%= form.text_field :photo, id: :pin_photo, :class => 'form-control' %>
+    </div>
+</div>
+<div class="form-group">
+    <div class="field">
+      <%= form.label :description %>
+      <%= form.text_field :description, id: :pin_description, :class => 'form-control' %>
+    </div>
+</div>
 
   <div class="actions">
     <%= form.submit %>
